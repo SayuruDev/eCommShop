@@ -29,12 +29,22 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar
+        style={{ backgroundColor: "#005e81", height: "100px" }} // Dark green background
+        variant="dark"
+        expand="lg"
+        collapseOnSelect
+      >
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>
-              <img src={logo} alt="ProShop" />
-              Online Camera Shop
+            <Navbar.Brand
+              style={{
+                fontSize: "36px",
+                fontFamily: "'Lucida Handwriting', cursive",
+              }}
+            >
+              <img src={logo} alt="ProShop" style={{ marginRight: "10px" }} />
+              <span style={{ color: "yellow" }}>Online Camera Shop</span>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
